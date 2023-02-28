@@ -15,11 +15,18 @@ export default function Products() {
   }, []);
 
   return (
-    <div>
+    <div className="products-grid">
       {products
         ? products.map((product) => (
-            <Link to={`/products/${product.id}  `} key={product.id}>
-              {product.title}
+            <Link
+              to={`/products/${product.id}  `}
+              key={product.id}
+              className="product-card"
+            >
+              <img src={product.image} alt="" />
+
+              <h4>{product.title}</h4>
+              <p>${product.price} </p>
             </Link>
           ))
         : "loading..."}

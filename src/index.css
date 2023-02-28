@@ -1,1 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.product-card {
+  background-color: #eee;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
