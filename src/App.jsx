@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./views/Home";
 import Products from "./views/Products";
+import Product from "./views/Product";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} />
       </Routes>
     </div>
   );
